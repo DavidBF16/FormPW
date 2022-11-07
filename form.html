@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="form.css" />
+		<title>Aula Form</title>
+	</head>
+	<body>
+		<h1 class="center">Form PW</h1>
+		<form>
+			<fieldset>
+				<legend>Informações Gerais de Cadastro</legend>
+				<label for="nome" class="center nome">Nome </label>
+				<label for="senha" class="center senha">Senha</label>
+				<label for="nasc" class="center nasc nascTxt">Data de Nascimento</label>
+				<br />
+				<input
+					class="nome"
+					type="text"
+					name="nome"
+					size="11"
+					id="nome"
+					accesskey="n"
+					required
+					autofocus
+				/>
+				<input
+					class="senha"
+					type="password"
+					name="senha"
+					required
+					id="senha"
+					accesskey="s"
+				/>
+				<input
+					class="nasc"
+					type="date"
+					name="dataNasc"
+					class="nasc"
+					required
+					id="nasc"
+					accesskey="d"
+				/>
+				<br />
+				<label for="estadoCivil" class="center">Estado Civil</label>
+				<label for="sexo" class="center sexoTxt">Sexo</label>
+				<label for="raca" class="center racaTxt">Cor ou Raça</label>
+				<br />
+				<select name="estadoCivil" id="estadoCivil" class="estadoCivil">
+					<option value="solteiro">Solteiro (a)</option>
+					<option value="casado">Casado (a)</option>
+					<option value="egoista">Helicóptero de Combate</option>
+				</select>
+				<input type="radio" name="sexo" value="feminino" class="sexo1" />
+				<label class="format" for="masculino" class="sexo">Masculino</label>
+				<input type="radio" name="sexo" value="feminino" class="sexo2" />
+				<label class="format" for="feminino">Feminino</label>
+
+				<select name="raca" id="raca" class="raca">
+					<option value="preto">Preto (a)</option>
+					<option value="pardo">Pardo (a)</option>
+					<option value="branco">Branco (a)</option>
+					<option value="indigena">Indígena</option>
+					<option value="amarelo">Amarelo (a)</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Muda esse fieldset Adriano</legend>
+				<label for="nome">Nome </label>
+				<input
+					type="text"
+					name="nome"
+					size="11"
+					id="nome"
+					accesskey="n"
+					autofocus
+				/>
+				<br />
+				<label for="mail">E-Mail </label>
+				<input
+					type="email"
+					name="email"
+					maxlength="33"
+					required
+					id="mail"
+					accesskey="e"
+				/>
+				<br />
+				<label>Data de Nascimento</label>
+				<input type="date" name="dataNasc" required id="nasc" accesskey="d" />
+				<br />
+				<label>Senha</label>
+				<input type="password" name="senha" required id="senha" accesskey="s" />
+				<br />
+				<label>Idade</label>
+				<input
+					type="number"
+					name="idade"
+					required
+					id="idade"
+					max="69"
+					accesskey="i"
+				/>
+				<br />
+				<label for="telefone">Telefone</label>
+				<input
+					type="tel"
+					name="telefone"
+					id="telefone"
+					placeholder="(XX) XXXXX-XXXX"
+				/>
+				<br />
+				<label for="estadoCivil">estadoCivil</label>
+				<select name="estadoCivil" id="estadoCivil">
+					<option value="celta">Celta</option>
+					<option value="fusca">Fusca</option>
+					<option value="egoista">Lamborghini Egoista</option>
+				</select>
+				<br />
+				<label for="sexo">Sexo:</label>
+				<input type="radio" name="sexo" value="feminino" />
+				<label class="format" for="masculino">Masculino</label>
+				<input type="radio" name="sexo" value="feminino" />
+				<label class="format" for="feminino">Feminino</label>
+				<br />
+				<label for="hobbies">Hobbies:</label>
+				<input class="format" type="checkbox" name="fubeca" />
+				<label class="format" for="fubeca">Jogar Fubeca</label>
+				<input type="checkbox" name="futebol" />
+				<label class="format" for="futebol">Jogar Futebol</label>
+				<input type="checkbox" name="therock" />
+				<label class="format" for="therock">Assistir The Rock</label>
+				<br />
+				<label class="goup" for="sugestao">Sugestões: </label>
+				<textarea name="sugestao" id="sugestao" cols="35" rows="15">
+Escreva sua sugestão
+                </textarea>
+				<br />
+				<div class="center">
+					<input type="submit" name="Enviar" value="Cadastrar!" />
+					<input type="reset" name="apagar" value="Limpar!" />
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

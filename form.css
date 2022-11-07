@@ -1,0 +1,109 @@
+body {
+	background-color: black;
+	color: deepskyblue;
+	font-family: Calibri, arial, sans-serif, times;
+	line-height: 30px;
+}
+
+.center {
+	text-align: center;
+}
+
+label {
+	display: inline-block;
+	width: 150px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nasc {
+	width: 150px;
+	text-align: center;
+}
+
+.nascTxt {
+	margin-left: 15px;
+}
+
+input {
+	margin-top: 6px;
+}
+
+label.format {
+	display: inline-block;
+}
+
+legend {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+input {
+	color: white;
+	background-color: black;
+	border: 1px solid rgb(95, 95, 95);
+	border-radius: 8px;
+}
+
+select {
+	margin-top: 6px;
+	height: 25px;
+	width: 170px;
+	background-color: black;
+	color: white;
+	border: 1px solid rgb(95, 95, 95);
+	border-radius: 8px;
+}
+
+textarea {
+	resize: none;
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+}
+
+fieldset {
+	width: 690px;
+	margin: auto;
+	border-radius: 8px;
+	border: 1px solid rgb(95, 95, 95);
+}
+
+.goup {
+	vertical-align: top;
+}
+
+.nome {
+	width: 250px;
+	margin-right: 10px;
+}
+
+.senha {
+	width: 200px;
+	margin-right: 10px;
+}
+
+.estadoCivil {
+	margin-right: 10px;
+}
+
+.sexo1 {
+	margin-left: 40px;
+}
+
+.sexo2 {
+	margin-left: -20px;
+}
+.sexoTxt {
+	width: 350px;
+}
+
+.raca {
+	margin-left: -60px;
+	width: 153px;
+}
+
+.racaTxt {
+	margin-left: -20px;
+	width: 153px;
+}

@@ -94,6 +94,7 @@ fieldset {
 .sexo2 {
 	margin-left: -20px;
 }
+
 .sexoTxt {
 	width: 350px;
 }
@@ -106,4 +107,96 @@ fieldset {
 .racaTxt {
 	margin-left: -20px;
 	width: 153px;
+}
+.cep {
+	width: 150px;
+	margin-right: 10px;
+}
+
+.cepLabel {
+	text-align: center;
+}
+
+.uf {
+	width: 155px;
+	margin-right: 10px;
+}
+
+.submitFieldset {
+	margin-top: 15px;
+}
+
+.ufLabel {
+	text-align: center;
+}
+
+.bairro {
+	width: 300px;
+}
+
+.textnume {
+	width: 155px;
+	margin-right: 10px;
+}
+
+.muniLabel {
+	text-align: center;
+	margin-left: 15px;
+}
+
+.bairroLabel {
+	text-align: center;
+	margin-left: 85px;
+}
+
+.numeLabel {
+	text-align: center;
+	margin-left: 15px;
+}
+
+.compLabel {
+	text-align: center;
+	margin-left: 85px;
+}
+
+.textmuni {
+	width: 150px;
+	margin-right: 10px;
+}
+
+.textcomp {
+	width: 296px;
+}
+
+.cadastrar {
+	margin-right: 5px;
+}
+
+.etecCode {
+	width: 200px;
+	margin-right: 10px;
+}
+
+.etecCodeLabel {
+	margin-left: 30px;
+	text-align: center;
+}
+
+.curso {
+	width: 200px;
+	margin-right: 10px;
+}
+
+.cursoLabel {
+	margin-left: 60px;
+	text-align: center;
+}
+
+.serie {
+	width: 210px;
+}
+
+.serieLabel {
+	margin-left: 65px;
+	text-align: center;
 }

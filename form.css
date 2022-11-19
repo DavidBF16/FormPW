@@ -5,8 +5,58 @@ body {
 	line-height: 30px;
 }
 
+.alignRight {
+	text-align: right;
+}
+
 .center {
 	text-align: center;
+}
+
+.centerDiv {
+	margin: 0 auto;
+}
+
+.assinsDiv {
+	width: 650px;
+	display: flex;
+	justify-content: center;
+}
+
+a:visited {
+	color: rgb(0, 60, 255);
+}
+
+ul {
+	padding-left: 20px;
+}
+
+.disclaimer {
+	color: rgb(20, 103, 131);
+	font-size: 75%;
+}
+
+.termosCondicaoTxt {
+	width: 500px;
+}
+
+.assinDiv {
+	margin-right: 15px;
+	padding: 5px;
+	border: 2px solid rgb(0, 92, 122);
+	border-radius: 8px;
+	font-size: 75%;
+	color: whitesmoke;
+	width: 220px;
+}
+
+.assinTitleDiv {
+	background: linear-gradient(rgb(81, 211, 255), rgb(0, 144, 192));
+	border-radius: 4px;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+	color: black;
 }
 
 label {
@@ -63,10 +113,10 @@ textarea {
 }
 
 fieldset {
-	width: 690px;
+	width: 650px;
 	margin: auto;
 	border-radius: 8px;
-	border: 1px solid rgb(95, 95, 95);
+	border: 1px solid rgb(0, 92, 122);
 }
 
 .goup {
@@ -199,4 +249,63 @@ fieldset {
 .serieLabel {
 	margin-left: 65px;
 	text-align: center;
+}
+
+.cpf {
+	width: 150px;
+	margin-right: 10px;
+}
+
+.cpfTxt {
+	margin-left: 0px;
+	text-align: center;
+}
+
+.email {
+	width: 280px;
+	margin-right: 10px;
+}
+
+.emailTxt {
+	margin-left: 80px;
+	text-align: center;
+}
+
+.assin {
+	width: 175px;
+}
+
+.assinTxt {
+	margin-left: 100px;
+	text-align: center;
+}
+
+.numeroCartao {
+	width: 250px;
+	margin-right: 10px;
+}
+
+.numeroCartaoTxt {
+	margin-left: 50px;
+	text-align: center;
+}
+
+.dataValidade {
+	width: 150px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.dataValidadeTxt {
+	margin-left: 67px;
+	text-align: center;
+}
+
+.codigoSeg {
+	width: 200px;
+}
+
+.codigoSegTxt {
+	text-align: center;
+	margin-left: 35px;
 }

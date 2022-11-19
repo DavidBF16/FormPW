@@ -9,6 +9,48 @@
 	</head>
 	<body>
 		<h1 class="center">ETEC Premium</h1>
+
+		<h3 class="center">Assinaturas</h3>
+
+		<p class="center disclaimer">
+			*Todas as assinaturas contêm privilegios das assinaturas anteriores
+		</p>
+
+		<div class="assinsDiv centerDiv">
+			<div class="assinDiv">
+				<div class="assinTitleDiv">Padrão</div>
+				<ul>
+					<li>Preferência na Fila do Pit Stop</li>
+					<li>Direito a uma pergunta durante atividades avaliativas</li>
+				</ul>
+			</div>
+
+			<div class="assinDiv">
+				<div class="assinTitleDiv">Premium</div>
+				<ul>
+					<li>Preferência na Fila da Merenda</li>
+					<li>
+						Direito a uma pergunta durante provas e três durante atividades
+						avaliativas
+					</li>
+				</ul>
+			</div>
+
+			<div class="assinDiv">
+				<div class="assinTitleDiv">Premium+</div>
+				<ul>
+					<li>Duas semanas a mais para entregar atividades atrasadas</li>
+					<li>
+						Direito a três perguntas durante provas e atividades avaliativas
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<br />
+
+		<h3 class="center">Cadastro</h3>
+
 		<form>
 			<fieldset>
 				<legend>Informações Gerais de Cadastro</legend>
@@ -22,18 +64,10 @@
 					name="nome"
 					size="11"
 					id="nome"
-					accesskey="n"
 					required
 					autofocus
 				/>
-				<input
-					class="senha"
-					type="password"
-					name="senha"
-					required
-					id="senha"
-					accesskey="s"
-				/>
+				<input class="senha" type="password" name="senha" required id="senha" />
 				<input
 					class="nasc"
 					type="date"
@@ -41,7 +75,6 @@
 					class="nasc"
 					required
 					id="nasc"
-					accesskey="d"
 				/>
 				<br />
 				<label for="estadoCivil" class="center">Estado Civil</label>
@@ -52,7 +85,9 @@
 					<option value="none">--</option>
 					<option value="solteiro">Solteiro (a)</option>
 					<option value="casado">Casado (a)</option>
-					<option value="egoista">Helicóptero de Combate</option>
+					<option value="divorciado">Divorciado (a)</option>
+					<option value="viuvo">Viúvo (a)</option>
+					<option value="separado">Separado (a)</option>
 				</select>
 				<input type="radio" name="sexo" value="feminino" class="sexo1" />
 				<label class="format" for="masculino" class="sexoLabel">Masculino</label>
@@ -109,32 +144,28 @@
 
 				<br />
 
-				<input class="cep" type="tel" required size="11" autofocus />
+				<input
+					class="cep"
+					type="text"
+					name="cep"
+					required
+					placeholder="XX.XXX-XXX"
+				/>
 
 				<input
 					class="textmuni"
 					type="text"
-					name="Múnicipio"
+					name="municipio"
 					required
 					id="Múnicipio"
-					accesskey="s"
-					autofocus
 					autocomplete=""
 				/>
-				<input
-					class="bairro"
-					type="text"
-					name="Bairro"
-					id="Bairro"
-					accesskey="n"
-					required
-					autofocus
-				/>
+				<input class="bairro" type="text" name="Bairro" id="Bairro" required />
 
 				<br />
 
-				<label for="UF" class="ufLabel">UF</label>
-				<label for="Numero" class="numeLabel">Número</label>
+				<label for="uf" class="ufLabel">UF</label>
+				<label for="numero" class="numeLabel">Número</label>
 				<label for="comp" class="compLabel">Complemento</label>
 				<br />
 
@@ -153,21 +184,83 @@
 					type="number"
 					name="numero"
 					required
-					id="Número"
-					accesskey="s"
+					id="numero"
 				/>
 
-				<input
-					class="textcomp"
-					type="text"
-					name="Complemento"
-					id="comp"
-					accesskey="d"
-				/>
+				<input class="textcomp" type="text" name="Complemento" id="comp" />
 			</fieldset>
 
 			<fieldset>
 				<legend>Informações de Pagamento</legend>
+
+				<label for="cpf" class="cpfTxt">CPF</label>
+				<label for="email" class="emailTxt">E-Mail</label>
+				<label for="assinatura" class="assinTxt">Assinatura</label>
+
+				<br />
+				<input
+					type="text"
+					class="cpf"
+					name="cpf"
+					id="cpf"
+					placeholder="XXX.XXX.XXX-XX"
+					required
+				/>
+
+				<input
+					type="email"
+					class="email"
+					name="email"
+					placeholder="nome@email.dominio"
+					required
+				/>
+
+				<select name="assinatura" id="assinatura" class="assin" required>
+					<option value="none">--</option>
+					<option value="padrao">Padrão - R$ 20 por mês</option>
+					<option value="preimium">Premium - R$ 35 por mês</option>
+					<option value="premiumPlus">Premium+ - R$ 50 por mês</option>
+				</select>
+
+				<br />
+
+				<label for="numeroCartao" class="numeroCartaoTxt">Número do Cartão</label>
+				<label for="dataValidade" class="dataValidadeTxt">Data de Validade</label>
+				<label for="codigoSeg" class="codigoSegTxt">Código de Segurança</label>
+
+				<br />
+
+				<input
+					type="text"
+					class="numeroCartao"
+					name="numeroCartao"
+					placeholder="XXXX XXXX XXXX XXXX"
+					required
+				/>
+
+				<input type="date" class="dataValidade" name="dataValidade" required />
+
+				<input
+					type="number"
+					class="codigoSeg"
+					name="codigSeg"
+					required
+					max="999"
+				/>
+
+				<br />
+
+				<input
+					type="checkbox"
+					name="termosCondicao"
+					id="termosCondicao"
+					required
+				/>
+				<label for="termosCondicao" class="termosCondicaoTxt">
+					Eu concordo com os
+					<a href="encurtador.com.br/jpCL7"> Termos de Condição </a>
+					e concordo em pagar o preço especificado
+				</label>
 			</fieldset>
 
 			<fieldset class="submitFieldset">
@@ -181,6 +274,10 @@
 					<input type="reset" name="apagar" value="Limpar!" />
 				</div>
 			</fieldset>
+
+			<p class="disclaimer alignRight">
+				*Site ficcional criado para fins didáticos*
+			</p>
 		</form>
 	</body>
 </html>
